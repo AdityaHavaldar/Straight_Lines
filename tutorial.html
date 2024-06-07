@@ -6,31 +6,29 @@
     <title>tutorial page</title>
     <style type="text/css">
         .tyt {
-            height: 980px;
-            width: 1500px;
+            width: 84%;
+            margin: 0 8%;
             background-color: #202020;
             border: solid 2px white;
-            margin-left: 0px;
         }
 
         body {
             background: black;
         }
 
+        .tut-container{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            margin:3% 0 0 0
+        }
+
         .tut {
             font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-            text-transform: uppercase;
-
-            width: 350px;
-            text-align: center;
-            line-height: 50px;
-
-            position: absolute;
-            left: 500px;
-            right: 500px;
-            top: 50px;
-            margin-left: 100px;
-            transform: translateY(-50%);
+    text-transform: uppercase;
+    width: 350px;
+    text-align: center;
+    transform: translateY(-50%);
         }
 
         .tut span {
@@ -104,33 +102,30 @@
         }
 
         .page {
-            height: 880px;
-            width: 1460px;
             border: dashed 2px white;
-            margin-top: 80px;
-            margin-left: 17px;
             color: white;
+            margin: 6% 2%;
             font-size: 20px;
-
-
         }
     </style>
 </head>
 
-<body bgcolor="black">
+<body>
     <div class="tyt">
         <a style="float: right;font-size: 20px;color: orange;" href="index.php">home</a>
+        <div class="tut-container">
         <div class="tut">
             <span>TUTORIAL</span>
         </div>
+        </div>
         <div class="page">
             <h3 style="color: lightgreen;text-align: center;"><u>COORDINATES OF THE POINT</u></h3>
-            <p align="center">The coordinates of a point are a pair of numbers that define its exact location on a
+            <p >The coordinates of a point are a pair of numbers that define its exact location on a
                 two-dimensional plane. Recall that the coordinate plane has two axes at right angles to each other,
                 called the x
                 and y axis. The coordinates of a given point represent how far along each axis the point is located.</p>
             <h3 style="color: lightgreen;text-align: center;"><u>DISTANCE BETWEEN TWO POINTS</u></h3>
-            <P align="center">&nbsp&nbspDistance between two points is the length of the line segment that connects the two given
+            <P >Distance between two points is the length of the line segment that connects the two given
                 points. Distance between two points in coordinate geometry can be calculated by finding the length of
                 the line
                 segment joining the given coordinates. </P>

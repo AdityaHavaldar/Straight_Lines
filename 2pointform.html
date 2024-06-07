@@ -65,7 +65,7 @@
         }
 
         .column {
-            width: 48.33%;
+            width: 100%;
             float: left;
             text-align: center;
             color: white;
@@ -106,6 +106,14 @@
             background: #202020;
             margin-left: 60px;
             border-radius: 5px;
+        }
+
+        .columns-container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+            width: 96%;
+            margin: 2%;
         }
 
         .glow-on-hover {
@@ -168,6 +176,12 @@
             margin-top: 500px;
         }
 
+        .heading-container{
+            width: 100%;
+            display:flex;
+            justify-content:center;
+        }
+
         @keyframes glowing {
             0% {
                 background-position: 0 0;
@@ -194,9 +208,13 @@
 </head>
 
 <body style="background-color: rgba(0, 0, 0); ">
-    <h1 class="ani" style="text-align: center;position: relative; bottom:40px; ">two point form</h1>
+    <div class="heading-container">
+    <h1 class="ani">two point form</h1>
+</div>
 
+    <div class="columns-container">
 
+    
     <div class="column">
         <a href="home page.html" style="margin-left: 565px;font-size: 15px;margin-top:600px;color:orange">HOME</a>
 
@@ -233,9 +251,9 @@
     <br><label style="font-size: 20px;color: gold;"><b>FORMULAE:- y − y 1 = y 2 − y 1 / x 2 − x 1 ( x − x 1
             )<br></b></label>
     </div>
-    </div>
     <div class="column" style="background-color: white;color: black"><canvas width="605" height="510" id="myCanvas"
             style="background-image: url(ghr.png); " ;></canvas><br /><br /></div>
+        </div>
     <script>
         function tslope() {
             var x1 = parseInt(document.getElementById("x1").value);
