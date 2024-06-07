@@ -108,7 +108,7 @@
             border-radius: 5px;
         }
 
-        .columns-container{
+        .columns-container {
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 10px;
@@ -176,10 +176,10 @@
             margin-top: 500px;
         }
 
-        .heading-container{
+        .heading-container {
             width: 100%;
-            display:flex;
-            justify-content:center;
+            display: flex;
+            justify-content: center;
         }
 
         @keyframes glowing {
@@ -199,8 +199,6 @@
         input {
             font-size: 20px;
         }
-
-
     </style>
 
 
@@ -209,51 +207,51 @@
 
 <body style="background-color: rgba(0, 0, 0); ">
     <div class="heading-container">
-    <h1 class="ani">two point form</h1>
-</div>
+        <h1 class="ani">two point form</h1>
+    </div>
 
     <div class="columns-container">
 
-    
-    <div class="column">
-        <a href="home page.html" style="margin-left: 565px;font-size: 15px;margin-top:600px;color:orange">HOME</a>
 
-        
-        <div class="dss">
+        <div class="column">
+            <a href="home page.html" style="margin-left: 565px;font-size: 15px;margin-top:600px;color:orange">HOME</a>
+
+
+            <div class="dss">
                 <form action="connect.php" method="post">
 
-                <label>ENTER THE VALUE OF X1 </label>
-                <input type="number" name="x1" id="x1" maxlength="3" autofocus="on"
-                    style=" width: 75px;height: 30px;"><br><br><br>
-                <label>ENTER THE VALUE OF Y1</label>
-                <input type="number" name="y1" id="y1" maxlength="3" style=" width: 75px;height: 30px;"><br><br><br>
-                <label>ENTER THE VALUE OF X2 </label>
-                <input type="number" name="x2" id="x2" maxlength="3" style=" width: 75px;height: 30px;"><br><br><br>
-                <label>ENTER THE VALUE OF Y2 </label>
-                <input type="number" name="y2" id="y2" maxlength="3" style=" width: 75px;height: 30px;"><br><br><br>
+                    <label>ENTER THE VALUE OF X1 </label>
+                    <input type="number" name="x1" id="x1" maxlength="3" autofocus="on"
+                        style=" width: 75px;height: 30px;"><br><br><br>
+                    <label>ENTER THE VALUE OF Y1</label>
+                    <input type="number" name="y1" id="y1" maxlength="3" style=" width: 75px;height: 30px;"><br><br><br>
+                    <label>ENTER THE VALUE OF X2 </label>
+                    <input type="number" name="x2" id="x2" maxlength="3" style=" width: 75px;height: 30px;"><br><br><br>
+                    <label>ENTER THE VALUE OF Y2 </label>
+                    <input type="number" name="y2" id="y2" maxlength="3" style=" width: 75px;height: 30px;"><br><br><br>
 
-                <div class="nikil">
-                    <button class="glow-on-hover" onclick="tslope();draw();" id="spl" name="submit"
-                        type="submit">CALCULATE</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <a href="2pointform.html"><button class="glow-on-hover" type="reset" id="dist"
-                            onclick="reset">RESET</button></a>
+                    <div class="nikil">
+                        <button class="glow-on-hover" onclick="tslope();draw();" id="spl" name="submit"
+                            type="submit">CALCULATE</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a href="2pointform.html"><button class="glow-on-hover" type="reset" id="dist"
+                                onclick="reset">RESET</button></a>
 
-                </div>
+                    </div>
 
-        </form>
+                </form>
 
-        <label style="font-size: 20px;color: orange;">EQUATION</label>
-        <!-- <input type="text" name="EQUATION" id="slpp" maxlength="3" style=" width: 400px;height: 30px;"><br><br><br> -->
+                <label style="font-size: 20px;color: orange;">EQUATION</label>
+                <!-- <input type="text" name="EQUATION" id="slpp" maxlength="3" style=" width: 400px;height: 30px;"><br><br><br> -->
 
 
 
-    </div>
-    <br><label style="font-size: 20px;color: gold;"><b>FORMULAE:- y − y 1 = y 2 − y 1 / x 2 − x 1 ( x − x 1
-            )<br></b></label>
-    </div>
-    <div class="column" style="background-color: white;color: black"><canvas width="605" height="510" id="myCanvas"
-            style="background-image: url(ghr.png); " ;></canvas><br /><br /></div>
+            </div>
+            <br><label style="font-size: 20px;color: gold;"><b>FORMULAE:- y − y 1 = y 2 − y 1 / x 2 − x 1 ( x − x 1
+                    )<br></b></label>
         </div>
+        <div class="column" style="background-color: white;color: black"><canvas width="605" height="510" id="myCanvas"
+                style="background-image: url(ghr.png); " ;></canvas><br /><br /></div>
+    </div>
     <script>
         function tslope() {
             var x1 = parseInt(document.getElementById("x1").value);
